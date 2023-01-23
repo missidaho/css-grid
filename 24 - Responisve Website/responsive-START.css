@@ -91,7 +91,7 @@ img {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.features {
+.feature {
   background: white;
   padding: 10px;
   border: 1px solid white;
@@ -134,12 +134,11 @@ img {
   display: block;
   content: '';
   height: 10px;
-  background: 
+  background: linear-gradient(to right, var(--yellow)), transparent; 
 
 }
 .gallery h2:after {
-  background: linear-gradient(to right, var(--yellow)), transparent; 
-  --direction: rigt;
+  --direction: right;
 
 
 }@media (max-width: 700px) {
@@ -191,12 +190,4 @@ img {
 [aria-expanded="true"] .open {
   display: none;
 }
-<script>
-  const navButton= document.querySelection('botton[aria-expanded]');
-  function toggleNav({target}) {
-    console expanded = target.getAttribute('aria-expanded')
-  }
-  navButton.addEventListener('click', toggleNav);=== 'true' || false;
-  navButton.addEventListener ('click', toggleNav);
-  console
-</script>
+
